@@ -1,27 +1,22 @@
-document.addEventListener('DOMContentLoaded', function() {
-    
-    const filtroInput = document.getElementById('filtroBusca');
-    const cards = document.querySelectorAll('.card-lenda');
+function showUser(str) {
+if (str == "") {
+    document.getElementById("cabecalho").innerHTML = "";
+    return;
+} else {
+    if (window.XMLHttpRequest) {
+        xmlhttp = new XMLHttpRequest();
+    } else {
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            document.getElementById("cabecalho").innerHTML = xmlhttp.responseText;
+        }
+    }
+    xmlhttp.open("GET","https://www.google.com.br");
+    xmlhttp.send();
+    }
+}
 
-    filtroInput.addEventListener('keyup', function() {
-        
-        const filtroTexto = filtroInput.value.toLowerCase();
+showUser("str");
 
-        cards.forEach(function(card) {
-            
-            const titulo = card.querySelector('h4').textContent.toLowerCase();
-
-            if (titulo.includes(filtroTexto)) {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    });
-
-    filtroInput.style.width = '98%';
-    filtroInput.style.padding = '15px';
-    filtroInput.style.fontSize = '1.1em';
-    filtroInput.style.border = '1px solid #ddd';
-    filtroInput.style.borderRadius = '8px';
-});
