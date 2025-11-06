@@ -19,11 +19,9 @@
 body {
     font-family: var(--fonte-texto);
     color: var(--cor-secundaria);
-    background-image: url(/img/Deteriorado.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url(/img/Fundo\ \(2\).png);
     background-size: cover;
-    background-attachment: fixed;
+    background-position: center;
     min-height: 100vh;
     line-height: 1.6;
 }
