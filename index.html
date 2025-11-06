@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurayami - Mitos e Lendas</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
-    <title>Kurayami</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Liu+Jian+Mao+Cao&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/Kurayami_Logo.png">
 </head>
 
@@ -19,69 +19,65 @@
     <header>
         <h1>Aproveite Cada Momento</h1>
         <nav>
-            <a href="#">Início</a>
-            <a href="#">Regiões</a>
+            <a href="index.html">Início</a>
+            <a href="#lendas">Lendas</a>
             <a href="#">Sobre</a>
         </nav>
     </header>
 
     <main>
-
         <section class="destaque">
             <h2>Explore Mitos do Mundo</h2>
             <p>Descubra as histórias que formam culturas.</p>
         </section>
 
-        <section class="lendas">
+        <section class="lendas" id="lendas">
             <h3>Lendas Populares</h3>
 
-            <article class="card-lenda">
+            <article class="card-lenda" data-id="kuchisake">
                 <h4>Kuchisake-onna (Japão)</h4>
-                <img src="img/Ona.png" alt="Ona">
-                <p>Ela é o espírito de uma mulher que foi brutalmente mutilada por seu marido, que cortou sua boca de
-                    orelha a orelha...</p>
-                <a href="historias.html">Leia mais</a>
+                <img src="img/Ona.png" alt="Kuchisake-onna">
+                <p>Ela é o espírito de uma mulher que foi brutalmente mutilada por seu marido, que cortou sua boca de orelha a orelha...</p>
+                <a href="historias.html?id=kuchisake" class="leia-mais-btn">Leia mais</a>
             </article>
 
-            <article class="card-lenda">
+            <article class="card-lenda" data-id="hanako">
                 <h4>Hanako-san (Japão)</h4>
-                <img src="img/San.jpeg" alt="Ilustração da lenda">
-                <p>Esta lenda urbana conta a história de uma jovem (chamada Kashima Reiko) que caiu nos trilhos de um
-                    trem e foi cortada ao meio...</p>
-                <a href="historias.html">Leia mais</a>
+                <img src="img/San.jpeg" alt="Hanako-san">
+                <p>Esta lenda urbana conta a história de uma jovem (chamada Kashima Reiko) que caiu nos trilhos de um trem e foi cortada ao meio...</p>
+                <a href="historias.html?id=hanako" class="leia-mais-btn">Leia mais</a>
             </article>
 
-            <article class="card-lenda">
+            <article class="card-lenda" data-id="gashadokuro">
                 <h4>Gashadokuro (Japão)</h4>
-                <img src="img/gashadokuro.png" alt="Ilustração da lenda">
-                <p>Um esqueleto gigante feito de ossos de pessoas que morreram de fome ou em batalha. Ele vaga à noite,
-                    fazendo um som de "gachi gachi", e ataca viajantes para arrancar suas cabeças.....</p>
-                <a href="historias.html">Leia mais</a>
+                <img src="img/gashadokuro.png" alt="Gashadokuro">
+                <p>Um esqueleto gigante feito de ossos de pessoas que morreram de fome ou em batalha. Ele vaga à noite, fazendo um som de "gachi gachi"...</p>
+                <a href="historias.html?id=gashadokuro" class="leia-mais-btn">Leia mais</a>
             </article>
 
-            <article class="card-lenda">
+            <article class="card-lenda" data-id="nanafushigi">
                 <h4>Gakkou no Nanafushigi (Japão)</h4>
-                <img src="img/escola.png" alt="Ilustração da lenda">
+                <img src="img/escola.png" alt="Gakkou no Nanafushigi">
                 <p>Um conjunto de lendas urbanas sobre fenômenos sobrenaturais em escolas japonesas....</p>
-                <a href="historias.html">Leia mais</a>
+                <a href="historias.html?id=nanafushigi" class="leia-mais-btn">Leia mais</a>
             </article>
 
-            <article class="card-lenda">
+            <article class="card-lenda" data-id="kiyotaki">
                 <h4>Tunel Kiyotaki (Japão)</h4>
-                <img src="img/tunel.png" alt="Ilustração da lenda">
-                <p>Um túnel real e mal-assombrado em Quioto, supostamente construído com trabalho escravo. Lendas dizem
-                    que seu comprimento muda e que fantasmas de operários e de uma mulher aparecem no local....</p>
-                <a href="historias.html">Leia mais</a>
+                <img src="img/tunel.png" alt="Tunel Kiyotaki">
+                <p>Um túnel real e mal-assombrado em Quioto, supostamente construído com trabalho escravo. Lendas dizem que seu comprimento muda...</p>
+                <a href="historias.html?id=kiyotaki" class="leia-mais-btn">Leia mais</a>
             </article>
+            
 
         </section>
-
     </main>
 
     <footer>
-        <p>&copy;Desde 2025, Bem vindo ao Kurayami</p>
+        <p>Bem vindo ao Kurayami</p>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 
 </html>

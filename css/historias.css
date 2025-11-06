@@ -1,0 +1,125 @@
+/* historias.css - Otimizado e Aprimorado */
+
+/* --- 1. Importação de Estilos Globais e Variáveis --- */
+/* Importa as variáveis e estilos base do style.css para manter a consistência */
+@import url('style.css'); 
+
+/* Sobrescreve variáveis se necessário, mas mantém a maioria */
+:root {
+    --cor-texto-historia: #F2EADF; /* Cor do texto dentro do container */
+}
+
+/* --- 2. Estilos Específicos da Página de Histórias --- */
+
+/* Fix para o pulo da âncora (embora não seja mais usado com o JS) */
+html {
+    scroll-padding-top: 100px; 
+    scroll-behavior: smooth;
+}
+
+/* Container principal que parece um pergaminho/bloco de história */
+.historia-container {
+    /* Usando o fundo escuro com borda vermelha para dar o toque Kurayami */
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-top: 30px;
+    border: 3px solid var(--cor-principal);
+    box-shadow: 0 5px 25px rgba(166, 17, 3, 0.7);
+}
+
+/* Estilo de cada artigo de lenda */
+.lenda-completa {
+    color: var(--cor-texto-historia); 
+    padding: 30px 0;
+    /* Borda vermelha separando cada lenda */
+    border-bottom: 1px solid rgba(166, 17, 3, 0.5);
+    /* Garante que a história apareça como bloco quando o JS a exibe */
+    display: block; 
+}
+
+.lenda-completa:last-child {
+    border-bottom: none; /* Remove a borda do último item */
+}
+
+/* Título da Lenda */
+.lenda-completa h2 {
+    font-family: var(--fonte-titulo);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--cor-principal); /* Título em vermelho para destaque */
+    text-shadow: 1px 1px 2px var(--cor-sombra);
+    margin-bottom: 25px;
+}
+
+/* Imagem da Lenda */
+.lenda-completa img {
+    display: block;
+    width: 100%;
+    max-width: 600px; /* Tamanho máximo maior para a imagem */
+    height: auto; /* Altura automática para manter proporção */
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto 30px auto; /* Centraliza a imagem */
+    border: 3px solid var(--cor-principal);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Texto da história (legibilidade é chave) */
+.lenda-completa p {
+    font-family: var(--fonte-texto);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 1.5em;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5); /* Sombra sutil para melhor leitura */
+}
+
+/* Botão de Voltar */
+.btn-voltar {
+    display: inline-block;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-voltar:hover {
+    background-color: #7c0d02;
+    transform: scale(1.05);
+}
+
+.gashadokuro{
+    background-image: url('/img/GashadokuroFundo.png');
+}
+
+/* --- 3. Responsividade --- */
+@media (max-width: 768px) {
+    .historia-container {
+        padding: 20px;
+    }
+    .lenda-completa h2 {
+        font-size: 2.5rem;
+    }
+    .lenda-completa img {
+        max-height: 300px;
+    }
+    .lenda-completa p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .historia-container {
+        padding: 15px;
+    }
+    .lenda-completa h2 {
+        font-size: 2rem;
+    }
+}
