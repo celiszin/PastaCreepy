@@ -18,8 +18,7 @@
 
 body {
     font-family: var(--fonte-texto);
-    color: var(--cor-secundaria);
-    background-image: url(/img/Fundo\ \(2\).png);
+    background-image: url('/img/Back.png');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
