@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     const urlParams = new URLSearchParams(window.location.search);
-    const idDaLenda = urlParams.get('id'); // Pega o valor do parâmetro 'id'
+    const idDaLenda = urlParams.get('id'); 
 
     const container = document.querySelector('.historia-container');
     
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         const lendaParaMostrar = document.getElementById(idDaLenda);
         if (lendaParaMostrar) {
-            lendaParaMostrar.style.display = 'block'; // Ou 'flex', dependendo do CSS
+            lendaParaMostrar.style.display = 'block'; 
             lendaParaMostrar.scrollIntoView({ behavior: 'smooth', block: 'start' });
         } else {
             console.error(`Lenda com ID "${idDaLenda}" não encontrada.`);
