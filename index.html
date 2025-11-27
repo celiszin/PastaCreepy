@@ -8,124 +8,228 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Liu+Jian+Mao+Cao&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Liu+Jian+Mao+Cao&family=Zhi+Mang+Xing&family=Noto+Serif+JP:wght@400;700&family=Yuji+Boku&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/Kurayami_Logo.png">
 </head>
 
 <body>
-    <img src="img/Bandeira.png" alt="bandeirajapao">
     <header>
-        <h1>Aproveite Cada Historia</h1>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="#lendas">Lendas</a>
-            <a href="#">Sobre</a>
-        </nav>
+        <div class="header-content">
+            <h1>Kurayami</h1>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="#lendas">Lendas</a>
+                <a href="#">Sobre</a>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section class="destaque">
-            <h2>Explore Mitos do Mundo</h2>
-            <p>Descubra as histórias que formam culturas.</p>
+            <div class="destaque-content">
+                <h2>O Mundo das Sombras</h2>
+                <p>Explore as histórias que moldaram o medo através dos séculos.</p>
+                <a href="#lendas" class="cta-btn">Ler Histórias</a>
+            </div>
+        </section>
+
+        <section class="barra-filtros">
+            <h3>Escolha uma Região</h3>
+            <div class="container-bandeiras">
+                <div class="icone-bandeira ativo" data-filter="todos" title="Todas as Lendas">
+                    <img src="https://cdn-icons-png.flaticon.com/512/814/814513.png" alt="Mundo">
+                </div>
+                <div class="icone-bandeira" data-filter="japao" title="Japão">
+                    <img src="img/Bandeira.png" alt="Bandeira Japão"> 
+                </div>
+                <div class="icone-bandeira" data-filter="brasil" title="Brasil">
+                    <img src="https://cdn-icons-png.flaticon.com/512/197/197386.png" alt="Bandeira Brasil">
+                </div>
+                <div class="icone-bandeira" data-filter="eua" title="Estados Unidos">
+                    <img src="https://cdn-icons-png.flaticon.com/512/197/197484.png" alt="Bandeira EUA">
+                </div>
+            </div>
         </section>
 
         <section class="lendas" id="lendas">
-            <h3>Lendas Populares</h3>
-
-            <article class="card-lenda" data-id="kuchisake">
-                <h4>Kuchisake-onna (Japão)</h4>
-                <img src="img/Ona.png" alt="Kuchisake-onna">
-                <p>Ela é o espírito de uma mulher que foi brutalmente mutilada por seu marido, que cortou sua boca de orelha a orelha...</p>
-                <a href="historias.html?id=kuchisake" class="leia-mais-btn">Leia mais</a>
-            </article>
-
-            <article class="card-lenda" data-id="hanako">
-                <h4>Hanako-san (Japão)</h4>
-                <img src="img/San.jpeg" alt="Hanako-san">
-                <p>Esta lenda urbana conta a história de uma jovem (chamada Kashima Reiko) que caiu nos trilhos de um trem e foi cortada ao meio...</p>
-                <a href="historias.html?id=hanako" class="leia-mais-btn">Leia mais</a>
-            </article>
-
-            <article class="card-lenda" data-id="teke">
-                <h4>Teke-Teke (Japão)</h4>
-                <img src="img/Teke.jpeg" alt="Hanako-san">
-                <p>Esta lenda urbana conta a história de uma jovem (chamada Kashima Reiko) que caiu nos trilhos de um trem e foi cortada ao meio...</p>
-                <a href="historias.html?id=teke" class="leia-mais-btn">Leia mais</a>
-            </article>
-
-            <article class="card-lenda" data-id="gashadokuro">
-                <h4>Gashadokuro (Japão)</h4>
-                <img src="img/gashadokuro.png" alt="Gashadokuro">
-                <p>Um esqueleto gigante feito de ossos de pessoas que morreram de fome ou em batalha. Ele vaga à noite, fazendo um som de "gachi gachi"...</p>
-                <a href="historias.html?id=gashadokuro" class="leia-mais-btn">Leia mais</a>
-            </article>
-
-            <article class="card-lenda" data-id="nanafushigi">
-                <h4>Gakkou no Nanafushigi (Japão)</h4>
-                <img src="img/escola.png" alt="Gakkou no Nanafushigi">
-                <p>Um conjunto de lendas urbanas sobre fenômenos sobrenaturais em escolas japonesas....</p>
-                <a href="historias.html?id=nanafushigi" class="leia-mais-btn">Leia mais</a>
-            </article>
-
-            <article class="card-lenda" data-id="kiyotaki">
-                <h4>Tunel Kiyotaki (Japão)</h4>
-                <img src="img/tunel.png" alt="Tunel Kiyotaki">
-                <p>Um túnel real e mal-assombrado em Quioto, supostamente construído com trabalho escravo. Lendas dizem que seu comprimento muda...</p>
-                <a href="historias.html?id=kiyotaki" class="leia-mais-btn">Leia mais</a>
-            </article>
             
-            <article class="card-lenda" data-id="gozu">
-                <h4>Gozu (Cabeça de Vaca)</h4>
-                <img src="img/Head.png" alt="Gozu - Cabeça de Vaca">
-                <p>Uma história tão terrível que nunca pode ser contada. Aqueles que a ouvem são tomados por um terror tão grande que morrem dias depois...</p>
-                <a href="historias.html?id=gozu" class="leia-mais-btn">Leia mais</a>
+            <article class="card-lenda" data-id="kuchisake" data-pais="japao">
+                <div class="card-image-container">
+                    <img src="img/Ona.png" alt="Kuchisake-onna">
+                    <span class="tag-pais">Japão</span>
+                </div>
+                <div class="card-content">
+                    <h4>Kuchisake-onna</h4>
+                    <p>O espírito de uma mulher mutilada que pergunta "Eu sou bonita?" antes de atacar...</p>
+                    <a href="historias.html?id=kuchisake" class="leia-mais-btn">Ler Lenda</a>
+                </div>
             </article>
 
-            <article class="card-lenda" data-id="akamanto">
-                <h4>Aka Manto (Capa Vermelha)</h4>
-                <img src="img/Aka.png" alt="Aka Manto">
-                <p>No último box do banheiro, uma voz pergunta: "Papel vermelho ou azul?". Escolher vermelho te fatia em pedaços. Escolher azul te estrangula...</p>
-                <a href="historias.html?id=akamanto" class="leia-mais-btn">Leia mais</a>
+            <article class="card-lenda" data-id="hanako" data-pais="japao">
+                <div class="card-image-container">
+                    <img src="img/San.jpeg" alt="Hanako-san">
+                    <span class="tag-pais">Japão</span>
+                </div>
+                <div class="card-content">
+                    <h4>Hanako-san</h4>
+                    <p>O espírito que habita o terceiro box do banheiro feminino no terceiro andar...</p>
+                    <a href="historias.html?id=hanako" class="leia-mais-btn">Ler Lenda</a>
+                </div>
             </article>
 
-            <article class="card-lenda" data-id="hachishakusama">
-                <h4>Hachishakusama (Japão)</h4>
-                <img src="img/Hashisakoi.png" alt="Hachishakusama">
-                <p>Uma mulher com oito pés de altura que emite um som "Po... Po... Po...". Se ela se fixar em você, especialmente crianças, é o seu fim em poucos dias...</p>
-                <a href="historias.html?id=hachishakusama" class="leia-mais-btn">Leia mais</a>
+            <article class="card-lenda" data-id="teke" data-pais="japao">
+                <div class="card-image-container">
+                    <img src="img/Teke.jpeg" alt="Teke Teke">
+                    <span class="tag-pais">Japão</span>
+                </div>
+                <div class="card-content">
+                    <h4>Teke-Teke</h4>
+                    <p>O fantasma de uma jovem cortada ao meio nos trilhos do trem...</p>
+                    <a href="historias.html?id=teke" class="leia-mais-btn">Ler Lenda</a>
+                </div>
             </article>
 
-            <article class="card-lenda" data-id="tomino">
-                <h4>Inferno de Tomino (Japão)</h4>
-                <img src="img/Tomino.png" alt="Inferno de Tomino">
-                <p>Um poema amaldiçoado. Dizem que se você lê-lo em voz alta, desgraça e morte cairão sobre você. Muitos que tentaram, sofreram acidentes...</p>
-                <a href="historias.html?id=tomino" class="leia-mais-btn">Leia mais</a>
+            <article class="card-lenda" data-id="gashadokuro" data-pais="japao">
+                <div class="card-image-container">
+                    <img src="img/gashadokuro.png" alt="Gashadokuro">
+                    <span class="tag-pais">Japão</span>
+                </div>
+                <div class="card-content">
+                    <h4>Gashadokuro</h4>
+                    <p>Um esqueleto gigante formado por ossos de pessoas que morreram de fome...</p>
+                    <a href="historias.html?id=gashadokuro" class="leia-mais-btn">Ler Lenda</a>
+                </div>
             </article>
 
-            <article class="card-lenda" data-id="kotoribako">
-                <h4>Kotoribako (Caixa)</h4>
-                <img src="img/Koto.png" alt="Kotoribako">
-                <p>Uma caixa de quebra-cabeça amaldiçoada. Ela é feita com as partes de crianças sacrificadas e traz morte e desgraça para quem a abre...</p>
-                <a href="historias.html?id=kotoribako" class="leia-mais-btn">Leia mais</a>
+            <article class="card-lenda" data-id="nanafushigi" data-pais="japao">
+                <div class="card-image-container">
+                    <img src="img/escola.png" alt="Gakkou no Nanafushigi">
+                    <span class="tag-pais">Japão</span>
+                </div>
+                <div class="card-content">
+                    <h4>Nanafushigi</h4>
+                    <p>Os sete mistérios escolares. Dizem que quem descobrir todos os sete, morrerá...</p>
+                    <a href="historias.html?id=nanafushigi" class="leia-mais-btn">Ler Lenda</a>
+                </div>
             </article>
 
-            <article class="card-lenda" data-id="daruma">
-                <h4>Daruma-san (O Jogo)</h4>
-                <img src="img/San.png" alt="Daruma-san">
-                <p>Um jogo ritualístico jogado no banho. Ao lavar o cabelo, você invoca um fantasma. Se falhar no ritual, ele te seguirá e te matará...</p>
-                <a href="historias.html?id=daruma" class="leia-mais-btn">Leia mais</a>
+            <article class="card-lenda" data-id="kiyotaki" data-pais="japao">
+                <div class="card-image-container">
+                    <img src="img/tunel.png" alt="Tunel Kiyotaki">
+                    <span class="tag-pais">Japão</span>
+                </div>
+                <div class="card-content">
+                    <h4>Túnel Kiyotaki</h4>
+                    <p>Um túnel real construído com trabalho escravo. Dizem que seu comprimento muda à noite...</p>
+                    <a href="historias.html?id=kiyotaki" class="leia-mais-btn">Ler Lenda</a>
+                </div>
+            </article>
+
+            <article class="card-lenda" data-id="gozu" data-pais="japao">
+                <div class="card-image-container">
+                    <img src="img/Head.png" alt="Gozu">
+                    <span class="tag-pais">Japão</span>
+                </div>
+                <div class="card-content">
+                    <h4>Gozu (Cabeça de Vaca)</h4>
+                    <p>Uma história tão terrível que quem a ouve morre de medo dias depois...</p>
+                    <a href="historias.html?id=gozu" class="leia-mais-btn">Ler Lenda</a>
+                </div>
+            </article>
+
+            <article class="card-lenda" data-id="akamanto" data-pais="japao">
+                <div class="card-image-container">
+                    <img src="img/Aka.png" alt="Aka Manto">
+                    <span class="tag-pais">Japão</span>
+                </div>
+                <div class="card-content">
+                    <h4>Aka Manto</h4>
+                    <p>No banheiro, uma voz pergunta: "Papel vermelho ou azul?". Ambas as escolhas são fatais...</p>
+                    <a href="historias.html?id=akamanto" class="leia-mais-btn">Ler Lenda</a>
+                </div>
+            </article>
+
+            <article class="card-lenda" data-id="hachishakusama" data-pais="japao">
+                <div class="card-image-container">
+                    <img src="img/Hashisakoi.png" alt="Hachishakusama">
+                    <span class="tag-pais">Japão</span>
+                </div>
+                <div class="card-content">
+                    <h4>Hachishakusama</h4>
+                    <p>Uma mulher de 2,5m de altura que emite o som "Po... Po... Po..." e persegue crianças...</p>
+                    <a href="historias.html?id=hachishakusama" class="leia-mais-btn">Ler Lenda</a>
+                </div>
+            </article>
+
+            <article class="card-lenda" data-id="tomino" data-pais="japao">
+                <div class="card-image-container">
+                    <img src="img/Tomino.png" alt="Inferno de Tomino">
+                    <span class="tag-pais">Japão</span>
+                </div>
+                <div class="card-content">
+                    <h4>Inferno de Tomino</h4>
+                    <p>Um poema amaldiçoado. Jamais leia em voz alta, ou tragédias cairão sobre você...</p>
+                    <a href="historias.html?id=tomino" class="leia-mais-btn">Ler Lenda</a>
+                </div>
+            </article>
+
+            <article class="card-lenda" data-id="kotoribako" data-pais="japao">
+                <div class="card-image-container">
+                    <img src="img/Koto.png" alt="Kotoribako">
+                    <span class="tag-pais">Japão</span>
+                </div>
+                <div class="card-content">
+                    <h4>Kotoribako</h4>
+                    <p>Uma caixa de quebra-cabeça feita com restos mortais, trazendo maldição para quem a possui...</p>
+                    <a href="historias.html?id=kotoribako" class="leia-mais-btn">Ler Lenda</a>
+                </div>
+            </article>
+
+            <article class="card-lenda" data-id="daruma" data-pais="japao">
+                <div class="card-image-container">
+                    <img src="img/San.png" alt="Daruma-san">
+                    <span class="tag-pais">Japão</span>
+                </div>
+                <div class="card-content">
+                    <h4>Daruma-san</h4>
+                    <p>O jogo do banho. Se você invocá-la, ela te seguirá o dia todo. Não olhe para trás...</p>
+                    <a href="historias.html?id=daruma" class="leia-mais-btn">Ler Lenda</a>
+                </div>
+            </article>
+
+            <article class="card-lenda" data-id="curupira" data-pais="brasil">
+                <div class="card-image-container">
+                    <img src="https://i.pinimg.com/originals/e5/cd/04/e5cd04482024467d1d2873a73df90554.jpg" alt="Curupira">
+                    <span class="tag-pais">Brasil</span>
+                </div>
+                <div class="card-content">
+                    <h4>Cabra Capriola</h4>
+                    <p>O demônio da floresta com pés virados para trás que protege a mata e confunde caçadores...</p>
+                    <a href="#" class="leia-mais-btn">Ler Lenda</a>
+                </div>
+            </article>
+
+            <article class="card-lenda" data-id="bocadeouro" data-pais="brasil">
+                <div class="card-image-container">
+                    <img src="img/Boca.png" alt="Boca de Ouro">
+                    <span class="tag-pais">Brasil</span>
+                </div>
+                <div class="card-content">
+                    <h4>Boca de Ouro</h4>
+                    <p>O bicheiro lendário que arrancou os dentes para colocar ouro e sonhava com um caixão dourado...</p>
+                    <a href="#" class="leia-mais-btn">Ler Lenda</a>
+                </div>
             </article>
 
         </section>
     </main>
 
     <footer>
-        <p>Bem vindo ao Kurayami</p>
+        <p>&copy; 2024 Kurayami - O Arquivo do Medo</p>
     </footer>
 
     <script src="js/script.js"></script>
 </body>
-
 </html>
