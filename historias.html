@@ -2,150 +2,281 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lendas - Kurayami</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquivos Confidenciais - Kurayami</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Liu+Jian+Mao+Cao&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Cormorant+Garamond:wght@400;600;700&family=Noto+Serif+JP:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/historias.css">
-    <link rel="icon" href="img/Kurayami_Logo.png" type="image/png">
+    <link rel="stylesheet" href="css/historias.css">
+    <link rel="icon" href="img/Kurayami_Logo.png" type="image/png">
+
+    <style>
+        /* Estilos aprimorados para leitura imersiva */
+        .lenda-completa {
+            margin-bottom: 100px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 60px;
+        }
+
+        .lenda-completa h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            color: #b30000;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            margin-bottom: 25px;
+            border-left: 5px solid #8a0b0b;
+            padding-left: 20px;
+        }
+
+        .lenda-completa img {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            filter: brightness(0.7) contrast(1.2) sepia(0.2);
+            border: 1px solid #1a1a1a;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+        }
+
+        .lenda-completa p {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 1.15rem;
+            line-height: 2;
+            color: #d1d1d1;
+            text-align: justify;
+            margin-bottom: 25px;
+        }
+
+        /* Caixa do Relato - Estilo "Documento Classificado" */
+        .relato-container {
+            background-color: #080808;
+            border: 1px solid #2a2a2a;
+            border-left: 6px solid #8a0b0b;
+            padding: 40px;
+            margin-top: 50px;
+            position: relative;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.9);
+        }
+
+        .relato-container::before {
+            content: "DEPOIMENTO CLASSIFICADO";
+            position: absolute;
+            top: -12px;
+            right: 30px;
+            background: #8a0b0b;
+            color: #000;
+            padding: 4px 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            font-family: 'Special Elite', cursive;
+            border-radius: 2px;
+            letter-spacing: 1px;
+        }
+
+        .relato-header {
+            font-family: 'Special Elite', cursive;
+            color: #b30000;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            border-bottom: 1px dashed #555;
+            padding-bottom: 15px;
+        }
+
+        .relato-texto {
+            font-family: 'Special Elite', cursive;
+            font-size: 1.05rem;
+            color: #bfbfbf;
+            line-height: 1.7;
+            white-space: pre-line; /* Mantém quebras de linha */
+        }
+    </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Aproveite Cada Momento</h1>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="index.html#lendas">Lendas</a>
-            <a href="#">Sobre</a>
-        </nav>
-        <div class="vela-container">
-        <div class="chama"></div>
-        <div class="pavio"></div>
-        <div class="cera"></div>
-    </div>
-    </header>
+    <header>
+        <h1>Dossiês do Sobrenatural</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="index.html#lendas">Fechar Arquivo</a>
+        </nav>
+        <div class="vela-container">
+            <div class="chama"></div>
+            <div class="pavio"></div>
+            <div class="cera"></div>
+        </div>
+    </header>
 
-    <main>
-        <div class="historia-container">
+    <main>
+        <div class="historia-container">
 
-            <a href="index.html#lendas" class="btn-voltar">&#10094; Voltar para Lendas</a>
+            <a href="index.html#lendas" class="btn-voltar">&#10094; Retornar à Base de Dados</a>
 
-            <article id="kuchisake" class="lenda-completa">
-                <h2>Kuchisake-onna</h2>
-                <img src="img/OnaFundo.png" alt="Ilustração da Kuchisake-onna">
-                <p>A "Mulher da Boca Cortada" é talvez a lenda urbana mais infame do Japão moderno. Embora algumas versões tracem sua origem ao período Heian (como a esposa vaidosa de um samurai que a mutilou por infidelidade), a lenda como a conhecemos explodiu em 1979, causando pânico real em Nagasaki e em todo o país, a ponto de a polícia aumentar as patrulhas para proteger crianças que voltavam da escola.</p>
-                <p>A lenda descreve um espírito vingativo (Onryō) de uma mulher que esconde seu rosto desfigurado atrás de uma máscara cirúrgica, algo comum no Japão. Ela aborda suas vítimas, geralmente crianças ou estudantes solitários à noite, e faz uma pergunta aparentemente inocente: "Watashi, kirei?" ("Eu sou bonita?").</p>
-                <p>A resposta da vítima sela seu destino. Se a pessoa disser "Não", ela é morta imediatamente com uma tesoura gigante, foice ou faca que a Kuchisake-onna carrega. Se a pessoa disser "Sim", ela remove a máscara, revelando sua boca cortada de orelha a orelha em um sorriso hediondo, e pergunta: "Kore demo?" ("...E agora?").</p>
-                <p>Se a vítima, aterrorizada, gritar ou disser "Não", ela é morta (muitas vezes cortada ao meio). Se, por lealdade ou pânico, a vítima disser "Sim" novamente, a fantasma irá cortar a boca da vítima para que fique exatamente como a dela. É dito que é impossível fugir, pois ela sempre reaparecerá na frente da vítima. A única forma de sobreviver é dar uma resposta vaga ou confusa, como "Você parece mais ou menos" ou "Você é normal", o que a deixa pensativa e dá tempo para escapar. Outra tática é jogar doces (Bekko ame) no chão, que ela parará para catar, ou dizer que você tem um compromisso urgente, apelando para sua estranha educação.</p>
-            </article>
+            <article id="kuchisake" class="lenda-completa">
+                <h2>Kuchisake-onna</h2>
+                <img src="img/OnaFundo.png" alt="Kuchisake-onna">
+                
+                <p>A Kuchisake-onna, ou "Mulher da Boca Cortada", é uma cicatriz aberta na psique japonesa. Sua lenda remonta ao período Heian, nascendo de uma tragédia doméstica de vaidade e sangue. Diz-se que ela era a esposa de um samurai, bela e infiel. O marido, consumido por ciúmes, mutilou seu rosto com uma espada, rasgando os cantos de sua boca até as orelhas, gritando: "Quem te achará bonita agora?". Ela morreu em agonia, mas seu espírito recusou-se a partir.</p>
+                <p>Nos tempos modernos, ela ressurge como uma figura alta, vestindo um casaco longo e máscara cirúrgica. Ela persegue crianças e viajantes solitários ao crepúsculo. Sua abordagem é uma pergunta mortal: "Eu sou bonita?". Se a resposta for "não", ela mata com uma tesoura. Se for "sim", ela remove a máscara, revelando a ferida grotesca, e grita: "E agora?". Uma segunda confirmação resulta na vítima tendo sua boca cortada igual à dela. Dizem que sua velocidade sobrenatural torna a fuga impossível; ela reaparece à frente de quem tenta correr.</p>
 
-            <article id="hanako" class="lenda-completa">
-                <h2>Hanako-san</h2>
-                <img src="img/Hanako.png" alt="Ilustração da Hanako-san">
-                <p>Toire no Hanako-san, ou "Hanako do Banheiro", é uma das "Sete Maravilhas da Escola" (Gakkou no Nanafushigi) e uma das lendas urbanas mais difundidas no Japão. Quase toda escola primária tem sua própria versão da história, mas os elementos centrais são consistentes.</p>
-                <p>A lenda é focada no espírito de uma jovem garota que assombra um banheiro feminino específico. As origens de Hanako variam: alguns dizem que ela era uma estudante morta durante um bombardeio na Segunda Guerra Mundial enquanto se escondia no banheiro. Outras versões afirmam que ela cometeu suicídio naquela cabine devido a bullying intenso, ou que foi assassinada por um estranho que invadiu a escola.</p>
-                <p>Para invocá-la, um estudante corajoso deve ir ao banheiro feminino do terceiro andar (o andar pode variar), aproximar-se da terceira cabine, bater na porta três vezes e perguntar: "Você está aí, Hanako-san?" ("Hanako-san, irasshaimasu ka?").</p>
-                <p>Se Hanako-san estiver presente, uma voz fantasmagórica responderá: "Sim, estou aqui" ("Hai, imasu"). O que acontece a seguir difere. Em versões mais maliciosas, a porta se abre e uma mão pálida ou ensanguentada puxa o invocador para dentro do vaso sanitário, arrastando-o diretamente para o inferno. Em outras histórias, a porta se abre para revelar Hanako, muitas vezes descrita com um corte de cabelo bob e vestindo uma saia vermelha, que apenas assusta o estudante. Em algumas escolas, ela é vista como uma protetora, assustando outros fantasmas ou valentões.</p>
-            </article>
+                <div class="relato-container">
+                    <div class="relato-header">Relatório Policial #1979-NK | Distrito de Nagasaki</div>
+                    <div class="relato-texto">
+                        "Eu tinha 14 anos e estava voltando do 'juku' (cursinho). As luzes da rua estavam piscando, emitindo aquele zumbido elétrico irritante. Foi quando eu a vi. Ela estava parada sob o poste, imóvel, de costas para mim. O casaco dela parecia sujo, como se tivesse sido arrastado na lama... ou em sangue seco. Eu tentei atravessar a rua para evitá-la, mas no momento em que pisei no asfalto, ela estava na minha frente. Não vi ela andar. Ela simplesmente... apareceu.
 
-            <article id="teke" class="lenda-completa">
-                <h2>Teke Teke</h2>
-                <img src="img/TekeTeke.png" alt="Ilustração do Teke Teke">
-                <p>O nome "Teke Teke" é uma onomatopeia para o som perturbador que este fantasma faz ao se mover: o "teke-teke-teke" de seus cotovelos ou unhas arrastando no chão. Esta é uma lenda de vingança (Onryō) particularly gráfica e assustadora.</p>
-                <p>A história de origem mais comum é a de uma estudante chamada Kashima Reiko (embora às vezes ela seja uma lenda separada). Em um dia de inverno, ela foi atacada e deixada inconsciente nos trilhos de um trem. O trem passou e cortou seu corpo ao meio. Devido ao frio extremo, seus vasos sanguíneos se contraíram, e ela não morreu imediatamente, mas sim lentamente, em agonia e fúria indescritíveis, com o torso separado das pernas.</p>
-                <p>Seu ódio era tão grande que seu torso reanimou como um espírito vingativo. Ela vaga por estações de trem, áreas urbanas e escolas, arrastando-se em uma velocidade sobrenatural que pode facilmente alcançar um carro em alta velocidade. Ela não tem a parte inferior do corpo, mas sua visão é aterrorizante.</p>
-                <p>Ela persegue suas vítimas, geralmente pessoas que andam sozinhas à noite. Quando alcança alguém, ela usa uma foice (ou, em algumas versões, suas próprias unhas) para cortar a vítima ao meio, na altura da cintura, condenando-a a se tornar um Teke Teke também e a sentir a mesma dor que ela sentiu. Dizem que, uma vez que ela te vê, é impossível escapar.</p>
-            </article>
-            
-            <article id="gashadokuro" class="lenda-completa">
-                <h2>Gashadokuro</h2>
-                <img src="img/GashadokuroFundo.png" alt="Ilustração do Gashadokuro">
-                <p>O Gashadokuro, ou "esqueleto faminto", não é o fantasma de uma única pessoa, mas uma entidade monstruosa (um Yokai) criada a partir da raiva e do sofrimento coletivo de centenas. Ele é formado pelos ossos de pessoas que morreram de fome, em campos de batalha ou de peste, e que não receberam os devidos ritos funerários. O ódio dessas almas se acumula e se funde, dando forma a este esqueleto colossal, dito ser quinze vezes maior que um ser humano.</p>
-                <p>Ele vaga pela zona rural nas horas mais escuras da noite. Sendo feito de ossos, ele se move com um silêncio fantasmagórico e é dito ser invisível. A única maneira de saber que um Gashadokuro está próximo é ouvir um zumbido alto ou um sino tocando em seus ouvidos. Quando a vítima percebe, já é tarde demais. O som de "gachi-gachi" (o ranger de seus dentes ou ossos) só é ouvido quando ele já está sobre você.</p>
-                <p>Sua forma de ataque é brutal: ele agarra viajantes solitários com suas mãos ossudas gigantes, arranca suas cabeças com uma mordida e bebe o sangue que jorra do corpo. Por ser uma manifestação de centenas de almas, dizem que o Gashadokuro é invencível e indestrutível, desaparecendo apenas quando sua raiva coletiva se dissipa. Sua imagem mais famosa vem da gravura em ukiyo-e de Utagawa Kuniyoshi, "Takiyasha, a Bruxa, e o Espectro do Esqueleto".</p>
-            </article>
-            
-            <article id="nanafushigi" class="lenda-completa">
-                <h2>Gakkou no Nanafushigi</h2>
-                <img src="img/EscolaFundo.png" alt="Ilustração da Escola Assombrada">
-                <p>Os "Sete Mistérios da Escola" (Gakkou no Nanafushigi) são um pilar do folclore escolar japonês. Não é uma única lenda, mas um "pacote" de sete fenômenos sobrenaturais que assombram uma escola específica. Quase toda escola no Japão tem sua própria lista, mas muitos mistérios são recorrentes e famosos em todo o país.</p>
-                <p>A lenda diz que esses mistérios mantêm um equilíbrio sobrenatural. O sétimo mistério é quase sempre o mais perigoso e, em muitas versões, é mantido em segredo. Acredita-se que se um aluno descobrir todos os sete mistérios, algo terrível acontecerá: o equilíbrio será quebrado, um demônio será libertado, ou o próprio aluno desaparecerá, sendo levado para o "outro lado".</p>
-                <p>Alguns dos mistérios mais comuns incluem: 1. Hanako-san no banheiro (a mais famosa). 2. O Piano que Toca Sozinho (o piano na sala de música toca uma melodia, como "Für Elise", à meia-noite). 3. O Manequim de Anatomia (o modelo de anatomia ou o esqueleto da sala de ciências ganha vida e vaga pelos corredores). 4. A Escada de 13 Degraus (uma escada que normally tem 12 degraus ganha um 13º degrau à noite; quem o pisa é levado para o inferno). 5. O Espelho Assombrado (um espelho que mostra seu reflexo morto ou o arrasta para dentro dele). 6. O Retrato que Chora (um retrato na sala de arte, cujos olhos se movem ou choram sangue). 7. O Templo que se Move (uma pequena estátua de Ninomiya Sontoku no pátio da escola que muda de lugar).</p>
-            </article>
-            
-            <article id="kiyotaki" class="lenda-completa">
-                <h2>Túnel Kiyotaki</h2>
-                <img src="img/TunelFundo.png" alt="Ilustração do Túnel Kiyotaki">
-                <p>O Túnel Kiyotaki é um local real e infame perto de Quioto, conhecido como um dos pontos mais mal-assombrados do Japão. Construído entre 1927 e 1928, é um túnel de via única que atravessa uma montanha, ligando Arashiyama à cidade rural de Sagakiyotaki.</p>
-                <p>A sua reputação sombria começa com a sua construção. Diz a lenda que ele foi construído usando trabalho forçado (escravo) de operários da ferrovia. As condições eram tão brutais que muitos morreram de exaustão, acidentes ou desnutrição, e seus corpos teriam sido selados dentro das paredes do túnel como parte da estrutura. Dizem que o túnel tem exatamente 444 metros de comprimento. No Japão, o número 4 (shi) é um homófono para "morte" (死), tornando 444 um número de azar extremo, significando "morte tripla".</p>
-                <p>As lendas sobre o túnel são numerosas. A mais famosa é a "maldição do espelho". Motoristas afirmam que, ao atravessar o túnel, é possível ver fantasmas no espelho retrovisor — aparições pálidas dos trabalhadores ou de outras almas. Se você vir um desses fantasmas no seu espelho, você está condenado a sofrer um acidente de carro horrível e fatal logo em seguida. Outros relatos incluem gritos e gemidos vindos das paredes, e o fantasma de uma mulher de branco (um Yūrei) que se suicidou pulando da ponte acima do túnel e que, por vezes, "aterra" no capô dos carros que passam por baixo.</p>
-                <p>Para piorar, o sinal de trânsito na entrada do túnel (que regula a passagem única) também é dito ser assombrado, supostamente mudando para verde à noite para atrair motoristas para colisões frontais com o tráfego que vem em sentido contrário.</p>
-            </article>
+                        O cheiro era insuportável. Cheirava a formol e carne velha. Quando ela perguntou 'Watashi, kirei?', a voz não saiu da garganta, parecia vir de dentro da minha própria cabeça. Eu, tremendo, disse 'Sim'. O movimento dela foi lento. Ela baixou a máscara cirúrgica. Deus... não era apenas um corte. A pele estava podre nas bordas, e eu podia ver a língua dela se movendo através do buraco na bochecha, lambendo os dentes expostos.
 
-                        <article id="gozu" class="lenda-completa">
-                <h2>Gozu (Cabeça de Vaca)</h2>
-                <img src="img/head.png" alt="Ilustração de Gozu - Cabeça de Vaca">
-                <p>Gozu, ou "Cabeça de Vaca", é uma lenda urbana única porque seu horror não está na história em si, mas no fato de que a história é supostamente *tão* aterrorizante que não pode ser contada. É uma lenda sobre uma lenda perdida. Dizem que qualquer um que ouça a história completa é tomado por um medo tão profundo que morre dias depois, tremendo incontrolavelmente.</p>
-                <p>A história mais famosa sobre "Gozu" envolve um professor em uma viagem escolar. Para acalmar os alunos barulhentos no ônibus, ele decide contar histórias de fantasmas. Ele então começa a contar a lenda proibida, "Cabeça de Vaca". À medida que ele fala, os alunos percebem que a voz do professor está mudando e ele parece estar em transe.</p>
-                <p>As crianças começam a gritar, implorando para ele parar, mas ele não consegue. Quando o professor finalmente recupera a consciência, o ônibus havia caído em uma vala. Todos os alunos estavam espumando pela boca e em estado catatônico, e o motorista estava morto sobre o volante, suando frio. Os alunos que sobreviveram não conseguiram se lembrar da história, apenas do terror avassalador. A história em si foi perdida, e apenas seu título e sua reputação mortal permanecem.</p>
-            </article>
+                        Quando ela gritou 'KORE DEMO?', eu joguei minha mochila nela e corri. Corri como nunca na vida. Mas eu ouvia... *clack, clack, clack*. O som de metal batendo contra metal logo atrás da minha orelha. Eu entrei em uma loja de conveniência gritando e desmaiei. A polícia disse que foi estresse. Mas eu sei o que vi. E às vezes, quando olho no espelho para escovar os dentes, vejo o reflexo dela atrás de mim, segurando aquela tesoura enferrujada."
+                    </div>
+                </div>
+            </article>
 
-            <article id="akamanto" class="lenda-completa">
-                <h2>Aka Manto (Capa Vermelha)</h2>
-                <img src="img/MantoFundo.png" alt="Ilustração de Aka Manto">
-                <p>Aka Manto é outro espírito que assombra banheiros, especificamente a última cabine do banheiro feminino (ou, em algumas versões, qualquer banheiro). A lenda descreve um espírito masculino, muitas vezes dito ser incrivelmente bonito em vida, que agora usa uma máscara para esconder o rosto e uma capa ou manto vermelho.</p>
-                <p>Quando a vítima está sentada no vaso sanitário, muitas vezes descobrindo que não há papel higiênico, uma voz misteriosa pergunta de fora da cabine: "Aka-kami... aoi-kami... dochira ga ii?" ("Papel vermelho... ou papel azul... qual você prefere?").</p>
-                <p>Assim como a Kuchisake-onna, esta é uma pergunta sem resposta correta. Se a vítima escolher "Papel Vermelho" (Aka-kami), o Aka Manto a esfaqueia ou esfolará violentamente até que suas roupas fiquem encharcadas de sangue. Se a vítima escolher "Papel Azul" (Aoi-kami), o espírito a estrangulará até que seu rosto fique azul e ela morra sufocada.</p>
-                <p>Tentar enganá-lo pedindo outra cor, como "amarelo", resulta em ter o rosto afundado no vaso sanitário cheio de urina. Dizer "não, obrigado" ou simplesmente ignorar a voz são as únicas chances de sobrevivência, fazendo com que o espírito desapareça. Tentar fugir fará com que a porta seja bloqueada por uma força invisível.</p>
-            </article>
+            <article id="teke" class="lenda-completa">
+                <h2>Teke Teke</h2>
+                <img src="img/TekeTeke.png" alt="Teke Teke">
+                
+                <p>Teke Teke é o som do horror se aproximando. É o ruído rítmico de cotovelos batendo no asfalto. Esta lenda narra o destino de uma jovem que caiu nos trilhos de trem em Hokkaido e foi cortada ao meio. O frio extremo cauterizou suas feridas, impedindo a morte imediata e condenando-a a agonizar por horas, vendo suas próprias pernas separadas do tronco.</p>
+                <p>Agora, ela vaga como um *Onryō*, buscando vingança. Sem a parte inferior do corpo, ela desenvolveu uma força monstruosa nos braços, capaz de se arrastar a velocidades de até 150km/h. Ela carrega uma foice ou usa suas próprias garras para cortar vítimas ao meio, replicando sua dor. A lenda carrega um perigo cognitivo: dizem que quem ouve a história completa tem três dias para encontrá-la.</p>
 
-            <article id="hachishakusama" class="lenda-completa">
-                <h2>Hachishakusama</h2>
-                <img src="img/HashisakuFundo.png" alt="Ilustração da Hachishakusama">
-                <p>A "Mulher de Oito Pés de Altura" é uma lenda da internet japonesa (um "creepypasta") que rapidamente se tornou um clássico moderno. Ela é um espírito ou demônio que tem a aparência de uma mulher anormalmente alta, vestindo um vestido branco e, muitas vezes, um chapéu de sol branco. Sua característica mais distintiva é o som que ela faz: um riso baixo e gutural que soa como "Po... Po... Po... Po...".</p>
-                <p>A Hachishakusama tem uma preferência por crianças. A lenda é frequentemente contada na perspectiva de alguém visitando parentes no interior do Japão. A criança vê a mulher alta sobre uma cerca e menciona isso aos avós, que entram em pânico. Eles revelam que a criatura foi selada há muito tempo por monges, mas escapou.</p>
-                <p>Uma vez que a Hachishakusama "marca" uma criança (ou seja, a criança a vê), ela está condenada a ser levada em poucos dias. A família tenta proteger a criança selando-a em um quarto com tigelas de sal em todos os cantos e ofudas (talismãs) nas janelas e portas. A criança é instruída a não abrir a porta para ninguém, não importa o que aconteça.</p>
-                <p>Durante a noite, a criatura tenta enganar a criança. Ela bate na janela e começa a emitir seu som "Po... Po... Po...". Pior ainda, ela imita perfeitamente a voz de um parente querido (como o avô), implorando para que a criança abra a porta. Se a criança ceder, ela é levada. A única "cura" é escapar da área o mais rápido possível e nunca mais retornar.</p>
-            </article>
+                <div class="relato-container">
+                    <div class="relato-header">Diário Recuperado de Estudante | Sapporo</div>
+                    <div class="relato-texto">
+                        "Começou com o som. Três noites atrás, eu estava estudando tarde e ouvi algo na rua. *Teke... teke... teke...*. Parecia alguém batendo com um taco de beisebol no chão, mas muito rápido. Eu moro no segundo andar, então não me preocupei. Na segunda noite, o som estava mais alto. Mais perto. Como se estivesse na calçada do prédio.
 
-            <article id="tomino" class="lenda-completa">
-                <h2>Inferno de Tomino</h2>
-                <img src="img/TominoFundo.png" alt="Ilustração do Inferno de Tomino">
-                <p>"O Inferno de Tomino" (Tomino no Jigoku) é um poema amaldiçoado escrito por Yomota Inuhiko, publicado em 1919 em uma coleção chamada "O Coração é como uma Pedra Rolante". A lenda urbana em torno deste poema é simples, mas sinistra: você nunca deve lê-lo em voz alta.</p>
-                <p>Dizem que ler o poema silenciosamente ou em sua cabeça é seguro, mas vocalizá-lo convida a desgraça, acidentes ou até a morte. O poema em si é surreal e perturbador, descrevendo a jornada de Tomino por oito círculos do inferno budista (Jigoku), questionando se ele está no inferno por seus próprios pecados.</p>
-                <p>A lenda ganhou força online, onde muitos usuários desafiavam uns aos outros a lê-lo em voz alta e gravar os resultados. Histórias de pessoas que adoeceram, se machucaram ou sentiram uma presença maligna logo após a leitura são comuns em fóruns da internet. A história mais famosa (e provavelmente fictícia) associada ao poema é a de um radialista que, ao lê-lo ao vivo no ar, começou a ter dificuldades para respirar, desmaiou e sofreu um acidente, não conseguindo terminar a leitura. O poema é um exemplo clássico de "meta-horror", onde o próprio ato de consumir a mídia é o perigo.</p>
-            </article>
+                        Hoje é a terceira noite. O som mudou. Não está mais na rua. Está na parede externa. Eu ouço o arranhar de unhas contra o concreto. *Scritch... teke... scritch*. Algo está escalando a parede verticalmente. Meu Deus, está na janela.
 
-            <article id="kotoribako" class="lenda-completa">
-                <h2>Kotoribako</h2>
-                <img src="img/KoFundo.png" alt="Ilustração da Kotoribako">
-                <p>A Kotoribako, ou "Caixa de Pegar Crianças", é outra lenda da internet japonesa, originada em fóruns como o 2channel. A história é complexa e horrível, geralmente contada através de postagens de blog ou diários encontrados. Não é um fantasma, mas um objeto amaldiçoado: uma caixa de quebra-cabeça de madeira, intrincadamente trabalhada.</p>
-                <p>A maldição da caixa não afeta quem a possui, mas sim as mulheres e crianças da linhagem sanguínea do proprietário. Qualquer mulher ou criança (menor de 18 anos) na família que veja a caixa sofrerá uma morte horrível, muitas vezes envolvendo o colapso de seus órgãos internos ou o vômito de suas próprias entranhas.</p>
-                <p>A origem da caixa é sua parte mais sombria. A lenda conta que ela foi criada em uma vila isolada no Japão feudal como uma forma de "guerra" espiritual contra outras vilas. Para criar uma Kotoribako, a vila precisava realizar um ritual complexo que envolvia o sacrifício de várias crianças. As partes dos corpos das crianças (dedos, línguas, etc.) eram usadas para construir e selar a caixa. Este ato de crueldade extrema infundia na caixa um poder amaldiçoado, que era então secretamente entregue a um membro da vila inimiga, dizimando suas futuras gerações.</p>
-            </article>
+                        Eu acabei de olhar. Há um rosto na parte inferior da minha janela. Uma mulher. Ela não está flutuando... ela está se segurando no parapeito com os cotovelos. Não tem corpo abaixo da cintura, apenas tripas penduradas e espinha dorsal exposta. Ela está sorrindo para mim. Os olhos dela estão arregalados, sem piscar. Ela levantou uma das mãos para bater no vidro. Ela sabe que eu estou aqui. O vidro está rachando..."
+                    </div>
+                </div>
+            </article>
 
-            <article id="daruma" class="lenda-completa">
-                <h2>Daruma-san (O Jogo)</h2>
-                <img src="img/Daruma.png" alt="Ilustração do Jogo Daruma-san">
-                <p>Daruma-san ga Koronda ("O Boneco Daruma Caiu") é um ritual perigoso, também conhecido como "O Jogo do Banho". O objetivo é invocar um fantasma no seu banheiro e depois passar um dia inteiro sendo perseguido por ele.</p>
-                <p>O ritual começa à noite, antes de dormir. Você deve encher a banheira com água fria, apagar todas as luzes e sentar-se na banheira de frente para a torneira. Enquanto lava o cabelo, você deve fechar os olhos e repetir: "Daruma-san ga koronda" (O boneco Daruma caiu). Ao fazer isso, você deve visualizar uma mulher em uma banheira que escorregou, caiu e bateu a cabeça na torneira, arrancando seu próprio olho.</p>
-                <p>Se feito corretamente, você sentirá uma presença fantasmagórica se erguer na água atrás de você. Você deve manter os olhos fechados, sair do banho com cuidado para não cair e ir dormir. No dia seguinte, o jogo começa. O fantasma (uma mulher de um olho só, com cabelos pretos e emaranhados) o seguirá o dia todo. Você não pode vê-la diretamente, mas se olhar por cima do ombro direito, poderá vislumbrá-la. Ela tentará se aproximar cada vez mais.</p>
-                <p>Para criar distância, você deve gritar "Kitta!" ("Eu te corto!") enquanto faz um movimento de corte de karatê com a mão. Para terminar o jogo antes da meia-noite (ou ela o matará em seus sonhos), você deve olhar para ela e gritar "Tomare!" ("Pare!"), fazendo o mesmo gesto de corte, para declará-la derrotada.</p>
-            </article>
+            <article id="kotoribako" class="lenda-completa">
+                <h2>Kotoribako</h2>
+                <img src="img/KoFundo.png" alt="Kotoribako">
+                
+                <p>Kotoribako, ou "Caixa de Pegar Crianças", é uma maldição manufaturada. Originada em 1860, em uma vila oprimida, foi criada como arma de vingança. Aldeões sacrificaram brutalmente crianças, usando partes de seus corpos para selar caixas de madeira complexas. O resultado é um objeto que irradia ódio puro.</p>
+                <p>A maldição ataca a fertilidade: mulheres e crianças que tocam a caixa sofrem falência de órgãos e hemorragias internas agonizantes. Homens são apenas portadores. A lenda diz que várias caixas ainda estão perdidas, escondidas em sótãos ou lojas de antiguidades, esperando uma vítima.</p>
 
-        </div>
+                <div class="relato-container">
+                    <div class="relato-header">Transcrição de Áudio: O Antiquário</div>
+                    <div class="relato-texto">
+                        "Eu cometi um erro. Um homem veio à loja vender uma caixa de marchetaria japonesa. Era linda, um trabalho de quebra-cabeça complexo. Mas pesava mais do que devia. Quando a coloquei no balcão, senti um frio no estômago, uma náusea repentina.
 
-        <script src="js/historias.js"></script>
-    </main>
+                        Minha esposa, a Yumi, estava grávida de oito meses. Ela desceu as escadas trazendo chá. No momento em que ela entrou na sala, a caixa... ela fez um som. Não foi um clique de madeira. Foi um choro. Um choro abafado, úmido, de criança. Yui largou a bandeja e gritou. Ela caiu no chão agarrando a barriga.
 
-    <footer>
-        <p>Bem vindo ao Kurayami</p>
-    </footer>
+                        Eu tentei ajudá-la, mas ela me empurrou, gritando que 'elas estavam mordendo'. Havia sangue... tanto sangue. O médico disse que foi um descolamento de placenta massivo, inexplicável. Mas eu sei a verdade. Enquanto eu segurava minha esposa morrendo, eu olhei para a caixa. Uma das peças de madeira tinha se movido sozinha. Havia um dente humano, pequeno, de leite, preso na fresta."
+                    </div>
+                </div>
+            </article>
+
+             <article id="capelobo" class="lenda-completa">
+                <h2>Capelobo</h2>
+                <img src="img/CapeloboFundo.png" alt="Capelobo">
+                
+                <p>O Capelobo é o pesadelo da Amazônia. Uma fusão grotesca entre homem e besta, dizem ser a forma amaldiçoada de alguém que cometeu crimes contra a natureza. Possui corpo humanoide coberto de pelos impenetráveis a balas e a cabeça de um tamanduá-bandeira. Ele caminha ereto, mas suas patas deixam rastros redondos para confundir caçadores.</p>
+                <p>Sua caça é brutal. Ele imobiliza a vítima com um abraço esmagador e insere seu focinho afiado no crânio para sugar o cérebro. Seu único ponto fraco é o umbigo. Seu grito estridente paralisa quem o ouve.</p>
+
+                <div class="relato-container">
+                    <div class="relato-header">Depoimento de Ribeirinho | Ilha do Marajó, 1998</div>
+                    <div class="relato-texto">
+                        "A gente achou o acampamento do seu João no terceiro dia de busca. A rede dele estava rasgada, não cortada com faca, mas estourada no meio. O mato em volta estava amassado, como se dois tratores tivessem brigado ali. O cheiro era o pior. Cheiro de almíscar forte e sangue velho.
+
+                        Encontramos o corpo dele a uns cinquenta metros, encostado numa Samaúma. Ele estava sentado, parecia que estava descansando. Mas a pele dele... estava pálida, seca, parecia papel. Quando o delegado tirou o chapéu dele, a gente viu. No topo da cabeça, um buraco perfeito, redondo, do tamanho de uma moeda. Não tinha sangue no chão. Ele foi drenado. Seco.
+
+                        E então, ouvimos. Vindo da copa das árvores, um grito. Começou grave, como um porco, e terminou agudo, como uma mulher gritando. O delegado, homem que já viu de tudo, ficou branco e mandou a gente voltar pro barco. Ele disse: 'O diabo tá com fome ainda'."
+                    </div>
+                </div>
+            </article>
+
+            <article id="encourado" class="lenda-completa">
+                <h2>O Encourado</h2>
+                <img src="img/EncouradoFundo.png" alt="O Encourado">
+                
+                <p>O Encourado é a personificação da tentação e do mal no sertão. Ele não é um bicho, é uma entidade que assume a forma de um vaqueiro imponente. Ele aparece em festas e feiras, vestindo couro cru escuro que cheira a enxofre e sangue. Ele nunca tira o chapéu para esconder os chifres e nunca mostra os pés.</p>
+                <p>Ele não mata por fome, mas por esporte. Ele oferece pactos, seduz mulheres e incita violência. Quando descoberto, desaparece em fumaça ou poeira, deixando ruína para trás. Animais, especialmente cães, sentem sua presença e uivam incessantemente.</p>
+
+                <div class="relato-container">
+                    <div class="relato-header">Carta encontrada em Baú | Sertão do Ceará</div>
+                    <div class="relato-texto">
+                        "Mãe, perdoe o que vou fazer. Tudo começou naquela vaquejada. O homem de couro chegou quando o sol estava se pondo. O cavalo dele não suava, mãe. O bicho corria, mas não suava e não respirava forte. O homem parou do meu lado e me ofereceu um gole de cachaça. O líquido desceu queimando como brasa, mas me senti forte.
+
+                        Ele disse: 'Quer ser o melhor vaqueiro dessa terra?'. Eu apertei a mão dele. A luva dele era áspera, quente demais. Naquele momento, senti um estalo no peito. Ganhei todos os prêmios, fiquei rico. Mas o preço chegou.
+
+                        Ontem à noite, ouvi o barulho de esporas no alpendre. Abri a janela e vi. Não havia homem nenhum, só a roupa de couro, em pé, vazia, flutuando no ar. O chapéu se virou para mim e eu vi... não tinha rosto, só escuridão e dois pontos vermelhos. Ele veio buscar o pagamento. Cuide dos meninos."
+                    </div>
+                </div>
+            </article>
+
+            <article id="wendigo" class="lenda-completa">
+                <h2>O Wendigo</h2>
+                <img src="img/WendigoFundo.png" alt="Wendigo">
+                
+                <p>O Wendigo é a fome encarnada nas florestas do norte. Originário do folclore algonquino, é a punição para o canibalismo. Quem come carne humana no inverno transforma-se em uma besta emaciada, gigante e eternamente faminta. Sua pele é cinza e esticada, seus lábios comidos expõem dentes sangrentos.</p>
+                <p>Quanto mais come, mais cresce, nunca se saciando. Ele imita vozes humanas para atrair vítimas para a floresta. Sua presença traz frio sobrenatural e cheiro de podridão. É um predador sádico que tortura psicologicamente antes de matar.</p>
+
+                <div class="relato-container">
+                    <div class="relato-header">Registro de Resgate em Montanha | Minnesota, 1998</div>
+                    <div class="relato-texto">
+                        "Dia 4. A nevasca não para. Encontramos a cabana do grupo de caçadores. A porta estava trancada por dentro, mas a janela dos fundos estava quebrada... de fora para dentro. Havia marcas de garras no batente, fundas na madeira maciça.
+
+                        Dentro, o horror. Não havia corpos. Havia apenas pedaços. Roupas rasgadas, equipamentos destruídos. O rádio ainda estava ligado, chiando. Mas o que me fez desistir da missão foi o que aconteceu quando saímos.
+
+                        Meu parceiro, Mike, parou. Ele disse: 'Você ouviu isso?'. Eu ouvi. Vindo de cima das árvores, a uns dez metros de altura. Era a voz do líder do grupo desaparecido, David. A voz dizia: 'Aqui em cima, rapazes. Está quente aqui em cima'. Mas a voz... ela repetia em loop perfeito, com a mesma entonação, sem respirar. 'Aqui em cima. Aqui em cima. Aqui em cima'. Nós corremos para o veículo. Enquanto dirigíamos, vi pelo retrovisor algo pálido e magro, com pernas longas demais, correndo entre as árvores, acompanhando o carro a 60km/h."
+                    </div>
+                </div>
+            </article>
+
+            <article id="skinwalker" class="lenda-completa">
+                <h2>Skinwalker</h2>
+                <img src="img/SkinwalkerFundo.png" alt="Skinwalker">
+                
+                <p>O Skinwalker (*Yee Naaldlooshii*) é o mal humano supremo no folclore Navajo. É um feiticeiro que alcançou poder matando um familiar. Ele veste peles de animais para mudar de forma, transformando-se em coiotes, lobos ou ursos distorcidos. Eles mantêm a inteligência humana e a malícia.</p>
+                <p>Eles correm ao lado de carros em alta velocidade, olham pelas janelas à noite e sopram pó de cadáveres para causar doenças. Seus olhos brilham de forma inumana. Falar sobre eles atrai sua atenção. A única forma de matá-los é dizer seu nome verdadeiro.</p>
+
+                <div class="relato-container">
+                    <div class="relato-header">Depoimento de Motorista de Caminhão | Rota 163, Utah</div>
+                    <div class="relato-texto">
+                        "Eu não paro mais naquela estrada à noite. Nunca mais. Eram 3 da manhã, lua cheia. Eu vi algo correndo no deserto, paralelo ao caminhão. Pensei ser um cachorro grande. Acelerei para 90km/h. A coisa acelerou junto.
+
+                        Então ela entrou na pista, correndo ao lado da minha porta. Não era um cachorro. Parecia um homem nu, pintado de branco, correndo de quatro como um animal. Os membros eram longos demais, as articulações dobravam errado. Ele virou a cabeça para mim. O rosto... era liso, sem nariz, só dois buracos.
+
+                        Ele sorriu. Um sorriso largo demais, cheio de dentes pequenos. Ele bateu no vidro da minha janela com a 'pata' dianteira, fazendo um sinal de 'shhh' com o dedo. Depois deu um salto impossível, passando por cima do caminhão inteiro, e sumiu do outro lado. Eu dirigi tremendo até o sol nascer."
+                    </div>
+                </div>
+            </article>
+
+            <article id="tahtahkleah" class="lenda-completa">
+                <h2>Tah-tah-kle'-ah (Mulher-Coruja)</h2>
+                <img src="img/OwlWomanFundo.png" alt="Mulher-Coruja">
+                
+                <p>As Tah-tah-kle'-ah são gigantes canibais das lendas Yakama. Mulheres monstruosas, maiores que árvores, com feições de coruja e olhos amarelos brilhantes. Elas habitam cavernas nas montanhas e caçam humanos à noite, preferindo crianças.</p>
+                <p>Elas carregam cestos imensos nas costas para coletar vítimas vivas. Elas imitam o pio de corujas para se comunicar. São a razão do medo ancestral da floresta noturna. Lendas dizem que seus olhos se tornaram a Lua após serem queimadas.</p>
+
+                <div class="relato-container">
+                    <div class="relato-header">História Oral Transcrita | Reserva Yakama</div>
+                    <div class="relato-texto">
+                        "Meu avô me contou, e o avô dele contou a ele. Não é história de ninar. É aviso. Ele disse que quando era jovem, foi pescar no crepúsculo. O ar parou de repente. Os sapos calaram. Ele sentiu um peso no ar, uma pressão nos ouvidos.
+
+                        Ele olhou para a montanha e viu duas luzes amarelas. Ele pensou que fosse fogo no topo do morro. Mas as luzes piscaram. E então elas se moveram. Algo se levantou da linha das árvores. Era uma silhueta tão grande que bloqueou as estrelas. Ele ouviu o som de passos... *BOOM... BOOM...*. A terra tremia.
+
+                        Ele se escondeu em um tronco oco e cobriu a boca. Ele ouviu a respiração dela lá fora, como um fole gigante. E o cheiro... penas podres e sangue velho. Ela passou a noite toda rondando, batendo nas árvores com um bastão, procurando comida. Ele disse que o som dela mastigando um alce inteiro soava como galhos secos quebrando."
+                    </div>
+                </div>
+            </article>
+
+        </div>
+        <script src="js/historias.js"></script>
+    </main>
+
+    <footer>
+        <p>Bem-vindo ao Kurayami - Onde as lendas respiram.</p>
+    </footer>
 
 </body>
 
