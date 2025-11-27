@@ -191,6 +191,11 @@ header nav a:hover {
     background-color: #7c0d02;
 }
 
+img .bandeirajapao{
+    width: 200px;
+    height: 200px;
+}
+
 footer {
     text-align: center;
     margin-top: 50px;
