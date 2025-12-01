@@ -15,6 +15,7 @@
 }
 
 .lenda-completa {
+    display: none;
     color: var(--cor-texto-historia);
     padding: 30px 0;
     border-bottom: 1px solid rgba(166, 17, 3, 0.5);
