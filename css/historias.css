@@ -1,14 +1,10 @@
-@import url('style.css');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Cormorant+Garamond:wght@400;600;700&display=swap');
 
 :root {
     --cor-texto-historia: #F2EADF;
 }
 
-html {
-    scroll-padding-top: 100px;
-    scroll-behavior: smooth;
-}
-
+/* Container Principal da História */
 .historia-container {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
@@ -23,6 +19,8 @@ html {
     padding: 30px 0;
     border-bottom: 1px solid rgba(166, 17, 3, 0.5);
     display: block;
+    margin-bottom: 100px;
+    padding-bottom: 60px;
 }
 
 .lenda-completa:last-child {
@@ -30,11 +28,13 @@ html {
 }
 
 .lenda-completa h2 {
-    font-family: var(--fonte-titulo);
+    font-family: 'Cormorant Garamond', serif;
     font-size: clamp(2.5rem, 5vw, 4rem);
-    color: var(--cor-principal);
-    text-shadow: 1px 1px 2px var(--cor-sombra);
+    color: #b30000;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
     margin-bottom: 25px;
+    border-left: 5px solid #8a0b0b;
+    padding-left: 20px;
 }
 
 .lenda-completa img {
@@ -42,23 +42,26 @@ html {
     width: 100%;
     max-width: 600px;
     height: auto;
-    max-height: 600px;
+    max-height: 450px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 4px;
     margin: 0 auto 30px auto;
-    border: 2px solid var(--cor-principal);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid #1a1a1a;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+    filter: brightness(0.7) contrast(1.2) sepia(0.2);
 }
 
 .lenda-completa p {
-    font-family: var(--fonte-texto);
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.15rem;
+    line-height: 2;
+    color: #d1d1d1;
     text-align: justify;
-    margin-bottom: 1.5em;
+    margin-bottom: 25px;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
 
+/* Botão Voltar */
 .btn-voltar {
     display: inline-block;
     background-color: var(--cor-principal);
@@ -78,35 +81,60 @@ html {
     transform: scale(1.05);
 }
 
-
-.gashadokuro {
-    background-image: url('/img/GashadokuroFundo.png');
+/* Caixa de Relato Policial (Estilo Dossiê) */
+.relato-container {
+    background-color: #080808;
+    border: 1px solid #2a2a2a;
+    border-left: 6px solid #8a0b0b;
+    padding: 40px;
+    margin-top: 50px;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.9);
 }
 
+.relato-container::before {
+    content: "DEPOIMENTO CLASSIFICADO";
+    position: absolute;
+    top: -12px;
+    right: 30px;
+    background: #8a0b0b;
+    color: #000;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    border-radius: 2px;
+    letter-spacing: 1px;
+}
+
+.relato-header {
+    font-family: 'Special Elite', cursive;
+    color: #b30000;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    border-bottom: 1px dashed #555;
+    padding-bottom: 15px;
+}
+
+.relato-texto {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.05rem;
+    color: #bfbfbf;
+    line-height: 1.7;
+    white-space: pre-line;
+}
+
+/* Responsividade Específica para Histórias */
 @media (max-width: 768px) {
-    .historia-container {
-        padding: 20px;
-    }
-
-    .lenda-completa h2 {
-        font-size: 2.5rem;
-    }
-
-    .lenda-completa img {
-        max-height: 300px;
-    }
-
-    .lenda-completa p {
-        font-size: 1rem;
-    }
+    .historia-container { padding: 20px; }
+    .lenda-completa h2 { font-size: 2.5rem; }
+    .lenda-completa img { max-height: 300px; }
+    .lenda-completa p { font-size: 1rem; }
 }
 
 @media (max-width: 480px) {
-    .historia-container {
-        padding: 15px;
-    }
-
-    .lenda-completa h2 {
-        font-size: 2rem;
-    }
+    .historia-container { padding: 15px; }
+    .lenda-completa h2 { font-size: 2rem; }
 }
